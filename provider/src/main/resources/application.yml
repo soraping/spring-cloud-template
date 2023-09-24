@@ -1,0 +1,13 @@
+server:
+  port: 8077
+
+spring:
+  application:
+    name: user-provider
+
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: 192.168.43.211:8848
