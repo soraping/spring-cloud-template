@@ -23,6 +23,8 @@
         <spring.cloud.version>2021.0.5</spring.cloud.version>
         <spring.cloud.alibaba.version>2021.0.5.0</spring.cloud.alibaba.version>
 
+        <logback.classic.version>1.2.3</logback.classic.version>
+
     </properties>
 
 
@@ -49,6 +51,13 @@
                 <version>${spring.cloud.alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.classic.version}</version>
             </dependency>
 
         </dependencies>
