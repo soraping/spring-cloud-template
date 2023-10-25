@@ -14,5 +14,26 @@ spring:
         password: nacos
         server-addr: 192.168.43.211:8848
 
+  kafka:
+    listener:
+      type: single
+    bootstrap-servers: 192.168.1.4:9092
+    producer:
+      retries: 3
+      acks: all
+      batch-size: 4096
+      buffer-memory: 33554432
+      client-id: spring-cloud-provider
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      compression-type: gzip
+      properties:
+        linger:
+          ms: 1000
+        max:
+          block:
+            ms: 6000
+
+
 log:
   path: ./logs

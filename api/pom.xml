@@ -3,13 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>qingyi</artifactId>
         <groupId>com.fangzheng</groupId>
+        <artifactId>qingyi</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>api</name>
+    <packaging>jar</packaging>
     <description>interface demo</description>
 
 
@@ -66,7 +67,7 @@
             <groupId>com.github.danielwegener</groupId>
             <artifactId>logback-kafka-appender</artifactId>
             <version>${logback.kafka.appender.version}</version>
-            <scope>runtime</scope>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.logstash.logback</groupId>
