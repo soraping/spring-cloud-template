@@ -72,7 +72,7 @@
             </layout>
             <charset>UTF-8</charset>
         </encoder>
-        <topic>${app.name}</topic>
+        <topic>springcloudlog</topic>
         <keyingStrategy class="com.fangzheng.common.config.kafka.LogKeyStrategy" />
         <deliveryStrategy class="com.github.danielwegener.logback.kafka.delivery.AsynchronousDeliveryStrategy" />
         <producerConfig>acks=0</producerConfig>
