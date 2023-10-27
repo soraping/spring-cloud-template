@@ -12,12 +12,12 @@ spring:
       discovery:
         username: nacos
         password: nacos
-        server-addr: 192.168.43.211:8848
+        server-addr: 192.168.1.4:8848
 
   kafka:
     listener:
       type: single
-    bootstrap-servers: 192.168.1.4:9092
+    bootstrap-servers: 121.40.222.245:9092
     producer:
       retries: 3
       acks: all
